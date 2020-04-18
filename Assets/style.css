@@ -1,0 +1,67 @@
+.top-spacing {
+    margin-top: 50px;
+}
+
+#datatable {
+    padding-left: 10%;
+}
+
+.plot-titles {
+    text-align: center;
+
+}
+
+h1 {
+    font-family: Georgia;
+    border-bottom: 1px solid black !important;
+}
+
+
+p {
+    font-family: Calibri, Helvetica;
+    font-size: 18px
+}
+
+
+.image-border {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.image-hover:hover {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.current-image {
+    opacity: .5;
+}
+
+.bottom-plots {
+    border-top: 1px solid black !important;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    text-align: center
+}
+
+.bottom-spacing {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .bottom-plots {
+        padding-left: 20%
+    }
+    p {
+        padding-left: 20%
+    }
+    h1 {
+        text-align: center
+    }
+    #datatable {
+        padding-left: 1%
+    }
+}
