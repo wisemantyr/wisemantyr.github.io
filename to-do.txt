@@ -1,0 +1,4 @@
+
+make pages resposive when shrunk
+ - comparison page: 2x2 on large screens, 4x1 on small
+ - navbar collapses when window is shrunk and button works to make navbar reappear
