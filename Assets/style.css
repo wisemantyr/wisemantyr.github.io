@@ -51,6 +51,10 @@ p {
     padding-bottom: 50px;
 }
 
+.stats {
+    list-style-type: none;
+  }
+
 @media (max-width: 600px) {
     .bottom-plots {
         padding-left: 20%
