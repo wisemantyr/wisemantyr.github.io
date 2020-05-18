@@ -1,0 +1,44 @@
+
+body {
+    background-color:  #b3e0ff;
+}
+.container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 10px
+}
+
+.page-title {
+    padding: 0;
+    text-align: center;
+    font-family: monospace;
+}
+#subject-no {
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+    font-family: monospace;
+}
+h1  {
+    font-size: 50px !important;
+}
+
+.panel {
+    margin-left: 20px;
+    vertical-align: center;
+}
+
+.well {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f2e6ff
+}
+
+p.well {
+    font-size: 15px
+}
