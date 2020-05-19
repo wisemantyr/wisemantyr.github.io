@@ -69,3 +69,7 @@ p {
         padding-left: 1%
     }
 }
+
+#weatherpy-home {
+    color: grey
+}
