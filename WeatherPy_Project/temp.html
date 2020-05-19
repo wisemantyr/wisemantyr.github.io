@@ -7,7 +7,7 @@
   <title>Web Design Challenge</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="Assets/style.css">
+  <link rel="stylesheet" type="text/css" href="Assets/weatherStyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -48,29 +48,32 @@
   <div class="container">
     <div class="row plot-titles">
       <div class="col-lg- 12 col-md-12 col-sm-12 col-12 top-spacing">
-        <h1>Latitude vs. Humidity</h1>
-        <img src="Visualizations/LatHumidPlot.png" alt="Humidity" class="top-spacing image-border">
+        <h1>Latitude vs. Temperature</h1>
+        <img src="Visualizations/LatTempPlot.png" alt="Temperature" class="top-spacing image-border">
       </div>
     </div> <!-- end row-->
     <div class="row plot-titles">
       <div class="col-lg- 12 col-md-12 col-sm-10 col-10 top-spacing">
         <p>Statistical analysis:
           <ul class = "stats">
-            <li>The value of r-squared was 0.0033060312335673613.</li>
-            <li>The line equation for linear regression was: y = 0.03x + 71.53..</li>
+            <li>The value of r-squared was 0.559308446073326.</li>
+            <li>The line equation for linear regression was: y = -0.6x + 67.0.</li>
           </ul>
         </p>
-        <p>There does not appear to be much correlation between latitude and humidity. This visual observation is supported by the
-          low r-squared value. However we can tell humidity mostly stays above 50% regardless of latitude. The vertical spread (between
-          100% and 20%) also remains fairly consistent regardless of latitude. The outliers (humidity below 20%) are concentrated roughly
-          between 10 and 45 degrees latitude. 
+        <p> Maximum temperature reaches the highest values around the 0 degree latitutde.
+          This is to be expected since it is common knowledge that temperatures increase as we near the equator.
+          However, the plot is not a perfect bell curve. The maximum temperatures
+          on the left side of the graph (negative latitude) drop less dramatically than
+          the right side of the graph (postive latitude). We can also tell by the range of the x-axis
+          and the concentration of data points that there were more randomly generated cities
+          north of the equator. 
         </p>
       </div>
     </div> <!-- end row-->
     <div class="row top-spacing bottom-plots">
-      <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
+      <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover current-image">
         <a href="temp.html">
-          <img src="Visualizations/LatTempPlot.png" alt="Temperature" height width=80%>
+          <img src="Visualizations/LatTempPlot.png" alt="Temperature" height width=80% class="current-image">
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
@@ -80,7 +83,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
         <a href="humid.html">
-          <img src="Visualizations/LatHumidPlot.png" alt="Humidity" height width=80% class="current-image">
+          <img src="Visualizations/LatHumidPlot.png" alt="Humidity" height width=80%>
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">

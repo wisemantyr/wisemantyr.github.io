@@ -1,0 +1,22 @@
+.jumbotron {
+    background-color: white;
+    border-bottom: 2px solid black;
+    font-family: Georgia;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+body {
+    background-color: whitesmoke;
+}
+
+#card-two.card-title {
+    padding-top: 100px
+}
+
+.btn {
+    background-color: darkslategrey;
+}
+
+.card-title {
+    text-align: center;
+}

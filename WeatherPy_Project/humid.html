@@ -7,7 +7,7 @@
   <title>Web Design Challenge</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="Assets/style.css">
+  <link rel="stylesheet" type="text/css" href="Assets/weatherStyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -48,24 +48,22 @@
   <div class="container">
     <div class="row plot-titles">
       <div class="col-lg- 12 col-md-12 col-sm-12 col-12 top-spacing">
-        <h1>Latitude vs. Cloudiness</h1>
-        <img src="Visualizations/LatCloudPlot.png" alt="Cloudiness" class="top-spacing image-border">
+        <h1>Latitude vs. Humidity</h1>
+        <img src="Visualizations/LatHumidPlot.png" alt="Humidity" class="top-spacing image-border">
       </div>
     </div> <!-- end row-->
     <div class="row plot-titles">
       <div class="col-lg- 12 col-md-12 col-sm-10 col-10 top-spacing">
         <p>Statistical analysis:
           <ul class = "stats">
-            <li>The value of r-squared was 0.011114766993218304.</li>
-            <li>The line equation for linear regression was: y = 0.12x + 48.65.</li>
+            <li>The value of r-squared was 0.0033060312335673613.</li>
+            <li>The line equation for linear regression was: y = 0.03x + 71.53..</li>
           </ul>
         </p>
-        <p>There does not appear to be much correlation between latitude and cloudiness. This visual observation is supported by the
-          low r-squared value. However, there are intresting horizontal clusters along each y-tick of the y-axis,
-          especially at 0%, 80%, and 100% cloudiness. Given the slightly positive slope of the linear regression
-          equation, we can tell that cloudiness increases slightly as the latitude increases. 
-          But, given the low degree of correlation between cloudiness and latitude, we can guess that this equation may change with a different
-          randomly generated set of data.
+        <p>There does not appear to be much correlation between latitude and humidity. This visual observation is supported by the
+          low r-squared value. However we can tell humidity mostly stays above 50% regardless of latitude. The vertical spread (between
+          100% and 20%) also remains fairly consistent regardless of latitude. The outliers (humidity below 20%) are concentrated roughly
+          between 10 and 45 degrees latitude. 
         </p>
       </div>
     </div> <!-- end row-->
@@ -77,12 +75,12 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
         <a href="cloud.html">
-          <img src="Visualizations/LatCloudPlot.png" alt="Cloudiness" height width=80% class="current-image">
+          <img src="Visualizations/LatCloudPlot.png" alt="Cloudiness" height width=80%>
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
         <a href="humid.html">
-          <img src="Visualizations/LatHumidPlot.png" alt="Humidity" height width=80%>
+          <img src="Visualizations/LatHumidPlot.png" alt="Humidity" height width=80% class="current-image">
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-5 col-5 image-hover">
@@ -92,7 +90,6 @@
       </div>
     </div> <!-- end row-->
   </div> <!-- end container -->
-</body>
 </body>
 
 </html>
