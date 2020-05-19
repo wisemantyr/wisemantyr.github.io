@@ -6,8 +6,8 @@ var svgHeight = 500;
 var chartMargin = {
 top: 30,
 right: 30,
-bottom: 30,
-left: 30
+bottom: 60,
+left: 80
 };
 
 // Define dimensions of the chart area
@@ -72,17 +72,32 @@ chartGroup.append("g")
 .attr("transform", `translate(0, ${chartHeight})`) //move from top to bottom of chart
 .call(bottomAxis);
 
+chartGroup.append("g")
+.classed("scatterpoints", true)
+
 //create a circle tag for each data object
-var scatterPoints = chartGroup.selectAll("circle")
+var scatterPoints = chartGroup.select(".scatterpoints").selectAll("circle")
 scatterPoints.data(ogData)
 .enter()
 .append("circle")
 .attr("cx", d => xLinearScale(d.obesity)) //set cx coord to scaled obesity data
 .attr("cy", d => yLinearScale(d.poverty)) //set cy coord to scaled poverty data
-.attr("r", 8) //size of points
-.attr()
+.attr("r", 10) //size of points
+.attr("fill",  " #00cccc")
 
-/* ====AXIS LABELS =====
+scatterPoints.data(ogData)
+.enter()
+.append ("text")
+.attr("x", d => xLinearScale(d.obesity)) //set cx coord to scaled obesity data
+.attr("y", d => yLinearScale(d.poverty))
+.attr("text-anchor", "middle")
+.attr("alignment-baseline", "middle")
+.attr("stroke", "black")
+.attr("stroke-width", .5)
+.text(d => d.abbr)
+.classed("scatterpoint-text", true)
+
+
 
 chartGroup.append("text")
 // Position the text
@@ -94,29 +109,13 @@ chartGroup.append("text")
 .attr("fill", "black")
 .text("Poverty");
 
-chartGroup.append("text")
-.attr("transform", `translate(${chartHeight / 2}, ${chartWidth + chartMargin.top + 37})`)
+chartGroup.select(".axis").append("text")
 .attr("text-anchor", "middle")
+.attr("transform", "rotate(-90)")
 .attr("font-size", "16px")
 .attr("fill", "black")
+.attr("x", -(chartHeight/2))
+.attr("y", -(chartMargin.left/2))
 .text("Obesity");
 
-
- ======= POINT LABELS =====
-chartGroup.selectAll("text")
-.data(ogData)
-.enter()
-.append("text")
-// Add your code below this line
-
-        .text((d) => (d[0] + "," + d[1]))
-        .attr("x", (d) => (d[0] + 5))
-        .attr("y", (d) => (h - d[1]));   
-// Add your code above this line
-*/
 })
-
-
-
-
-
