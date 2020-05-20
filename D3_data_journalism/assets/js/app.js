@@ -75,6 +75,15 @@ chartGroup.append("g")
 chartGroup.append("g")
 .classed("scatterpoints", true)
 
+/* ===== TOOL TIP ====
+var tool_tip = d3.tip()
+.attr("class", "d3-tip")
+.offset([-8, 0])
+.html(function(d) { return "State: " + d.state; });
+
+scatterPoints.call(tool_tip);
+==================*/
+
 //create a circle tag for each data object
 var scatterPoints = chartGroup.select(".scatterpoints").selectAll("circle")
 scatterPoints.data(ogData)
@@ -82,13 +91,18 @@ scatterPoints.data(ogData)
 .append("circle")
 .attr("cx", d => xLinearScale(d.obesity)) //set cx coord to scaled obesity data
 .attr("cy", d => yLinearScale(d.poverty)) //set cy coord to scaled poverty data
-.attr("r", 10) //size of points
-.attr("fill",  " #00cccc")
+.attr("r", 12) //size of points
+.attr("fill",  "#00cccc")
+.append("title")
+.text(d => d.state  + "\nPoverty: " + d.poverty + "\nObesity: " + d.obesity) //hovertext
+//.on('mouseover', tool_tip.show)
+//.on('mouseout', tool_tip.hide)
 
+//create text inside of each scatter point
 scatterPoints.data(ogData)
 .enter()
 .append ("text")
-.attr("x", d => xLinearScale(d.obesity)) //set cx coord to scaled obesity data
+.attr("x", d => xLinearScale(d.obesity))
 .attr("y", d => yLinearScale(d.poverty))
 .attr("text-anchor", "middle")
 .attr("alignment-baseline", "middle")
@@ -96,9 +110,10 @@ scatterPoints.data(ogData)
 .attr("stroke-width", .5)
 .text(d => d.abbr)
 .classed("scatterpoint-text", true)
+.append("title")
+.text(d => d.state  + "\nPoverty: " + d.poverty + "\nObesity: " + d.obesity) //hovertext
 
-
-
+//X Axis Label
 chartGroup.append("text")
 // Position the text
 // Center the text:
@@ -109,6 +124,7 @@ chartGroup.append("text")
 .attr("fill", "black")
 .text("Poverty");
 
+//Y Axis Label
 chartGroup.select(".axis").append("text")
 .attr("text-anchor", "middle")
 .attr("transform", "rotate(-90)")
