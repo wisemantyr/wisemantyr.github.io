@@ -71,7 +71,7 @@ d3.csv("assets/data/data.csv").then(function (ogData) {
         .attr("cx", d => xLinearScale(d.obesity)) //set cx coord to scaled obesity data
         .attr("cy", d => yLinearScale(d.poverty)) //set cy coord to scaled poverty data
         .attr("r", 12) //size of points
-        .attr("fill", "#00cccc")
+        .attr("fill", "#b3e6b3")
 
     //create text inside of each scatter point
     chartGroup
