@@ -25,8 +25,39 @@ body {
   padding: 10px;
   font: 10px sans-serif;
   text-align: center;
-  color: black;
-  background: lightblue;
+  color: white;
+  background: black;
   border: 0;
   border-radius: 10px;
+  opacity: 0.5;
+}
+
+.active-axis {
+  font-weight: bold;
+  fill:black;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+  font-size: 18px
+}
+
+.inactive-axis {
+  font-weight: lighter;
+  fill:grey;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive-axis:hover {
+  fill: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#page-title {
+  border-bottom: 1px solid black;
+  font-style: italic;
+}
+
+.article {
+  padding-top: 25px
 }
