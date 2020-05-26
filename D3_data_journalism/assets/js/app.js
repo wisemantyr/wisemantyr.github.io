@@ -29,13 +29,13 @@ var chosenX = "obesity";
 var chosenY = "poverty";
 
 
+//create a scale for the axes dependent on event listener value
 function xScale(censusData, chosenX) {
     var xLinearScale = d3.scaleLinear()
         .domain([d3.min(censusData, d => d[chosenX]) * .9, d3.max(censusData, d => d[chosenX]) * 1.1])
         .range([0, chartWidth]);
     return xLinearScale;
 }
-
 function yScale(censusData, chosenY) {
     var yLinearScale = d3.scaleLinear()
         .domain([d3.min(censusData, d => d[chosenY]) * .9, d3.max(censusData, d => d[chosenY]) * 1.1])
@@ -43,6 +43,7 @@ function yScale(censusData, chosenY) {
     return yLinearScale;
 }
 
+//create function to create axes on the page with a transition
 function renderXAxis(newXScale, xAxis) {
     var bottomAxis = d3.axisBottom(newXScale);
 
@@ -52,7 +53,6 @@ function renderXAxis(newXScale, xAxis) {
 
     return xAxis;
 }
-
 function renderYAxis(newYScale, yAxis) {
     var leftAxis = d3.axisLeft(newYScale);
 
@@ -63,58 +63,67 @@ function renderYAxis(newYScale, yAxis) {
     return yAxis;
 }
 
+//built circles for scatteer plot based on event listener values with a transition
 function renderPointsX(scatterPoints, newXScale, chosenX) {
-
     scatterPoints.transition()
         .duration(1000)
-        .attr("cx", d => newXScale(d[chosenX]));
+        .attr("cx", d => newXScale(d[chosenX]));//change the x axis data & scale
     return scatterPoints;
 }
-
 function renderPointsY(scatterPoints, newYScale, chosenY) {
-
     scatterPoints.transition()
         .duration(1000)
-        .attr("cy", d => newYScale(d[chosenY]));
+        .attr("cy", d => newYScale(d[chosenY])); //change the y axis data & scale
     return scatterPoints;
 }
 
+//change abbreviated state labels inside of circles based on event listeners
 function renderTextX (circleText, newXScale, chosenX) {
     circleText.transition()
         .duration(1000)
-        .attr("x", d => newXScale(d[chosenX]));
+        .attr("x", d => newXScale(d[chosenX])); //change x axis data & scale
     return circleText;
 }
 function renderTextY (circleText, newYScale, chosenY) {
     circleText.transition()
         .duration(1000)
-        .attr("y", d => newYScale(d[chosenY]));
+        .attr("y", d => newYScale(d[chosenY])); //change y axis data & scale
     return circleText;
 }
 
-function updateToolTip(chosenX, chosenY, scatterPoints) {
+//change the tool tips to the correct data
+function updateToolTip(chosenX, chosenY, circleText) {
     var xLabel;
     var yLabel;
 
     if (chosenX === "obesity") { //value for event listener
-        xLabel = "Obesity"
+        xLabel = "Obesity"; //value inside of tooltip
+        plotTitle1 = "Obesity Rate vs." //plot tile
     }
     else if (chosenX === "healthcare") {
-        xLabel = "Have Healthcare"
+        xLabel = "Has Healthcare";
+        plotTitle1 = "Healthcare Coverage vs.";
     }
     else {
         xLabel = "Smokes"
+        plotTitle1 = "Smoking Rate vs."
     }
 
-    if (chosenY === "poverty") { //value for event listener
-        yLabel = "Poverty (%)"
+    if (chosenY === "poverty") { 
+        yLabel = "Poverty (%)";
+        plotTitle2 = "Poverty Rate";
     }
     else if (chosenY === "income") {
-        yLabel = "Income"
+        yLabel = "Income";
+        plotTitle2 = "Income";
     }
     else {
-        yLabel = "Age"
+        yLabel = "Age";
+        plotTitle2 = "Median Age"
     }
+
+    d3.selectAll(".plotTitle")
+        .html(`${plotTitle1} ${plotTitle2}`);
 
     var toolTip = d3.tip()
         .attr("class", "tooltip")
@@ -123,9 +132,9 @@ function updateToolTip(chosenX, chosenY, scatterPoints) {
             return (`${d.state} <br> ${xLabel}: ${d[chosenX]}% <br> ${yLabel}: ${d[chosenY]}`)
         });
 
-    scatterPoints.call(toolTip)
+    circleText.call(toolTip)
 
-    scatterPoints
+    circleText
         .on("mouseover", function (d) {
             toolTip.show(d);
         })
@@ -133,7 +142,7 @@ function updateToolTip(chosenX, chosenY, scatterPoints) {
             toolTip.hide(d);
         });
 
-    return scatterPoints;
+    return circleText;
 }
 
 d3.csv("assets/data/data.csv").then(function (censusData) {
@@ -191,16 +200,17 @@ d3.csv("assets/data/data.csv").then(function (censusData) {
         .attr("stroke-width", .5)
         .text(d => d.abbr)
         .classed("scatterpoint-text", true)
-
+    
+        //create group for event listener value options
     var labelsGroupX = chartGroup.append("g")
-        .attr("transform", `translate(${chartWidth / 2}, ${chartHeight + 20})`);
+        .attr("transform", `translate(${chartWidth / 2}, ${chartHeight + 20})`); //axis position
 
     var obesityLabel = labelsGroupX.append("text")
         .attr("x", 0)
         .attr("y", 20)
         .attr("value", "obesity") //for event listener
-        .classed("active-axis", true)
-        .text("Obesity Rate (%)");
+        .classed("active-axis", true) //for styling
+        .text("Obesity Rate (%)"); //axis title
 
     var smokesLabel = labelsGroupX.append("text")
         .attr("x", 0)
@@ -214,7 +224,7 @@ d3.csv("assets/data/data.csv").then(function (censusData) {
         .attr("y", 70)
         .attr("value", "healthcare")
         .classed("inactive-axis", true)
-        .text("Have Healthcare (%)")
+        .text("Has Healthcare (%)")
 
     var labelsGroupY = chartGroup.append("g")
         .attr("transform", "rotate(-90)");
@@ -240,7 +250,7 @@ d3.csv("assets/data/data.csv").then(function (censusData) {
         .classed("inactive-axis", true)
         .text("Income")
 
-    var scatterPoints = updateToolTip(chosenX, chosenY, scatterPoints);
+    var circleText = updateToolTip(chosenX, chosenY, circleText);
 
     labelsGroupX.selectAll("text")
         .on("click", function () {
@@ -254,8 +264,7 @@ d3.csv("assets/data/data.csv").then(function (censusData) {
                 xAxis = renderXAxis(xLinearScale, xAxis);
 
                 scatterPoints = renderPointsX(scatterPoints, xLinearScale, chosenX);
-                scatterPoints = updateToolTip(chosenX, chosenY, scatterPoints);
-
+                circleText = updateToolTip(chosenX, chosenY, circleText);
                 circleText = renderTextX(circleText, xLinearScale, chosenX);
 
                 if (chosenX === "smokes") {
@@ -306,8 +315,7 @@ d3.csv("assets/data/data.csv").then(function (censusData) {
                 yAxis = renderYAxis(yLinearScale, yAxis);
 
                 scatterPoints = renderPointsY(scatterPoints, yLinearScale, chosenY);
-                scatterPoints = updateToolTip(chosenX, chosenY, scatterPoints);
-
+                circleText = updateToolTip(chosenX, chosenY, circleText);
                 circleText = renderTextY(circleText, yLinearScale, chosenY)
 
                 if (chosenY === "age") {
