@@ -2,56 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Project Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/homepageStyle.css">
 </head>
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="Projects_Homepage/index.html">Porfolio Home </a>
-</nav>
-<body id="body">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-8 page-title">
-        <h1>--Belly Button Biodiversity Dashboard--</h1>
-        <h2>Select test subject below to explore the dataset</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-sm-8">
-        <div class="well">
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        <h3 id="subject-no">Test Subject ID # 940</h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-10 col-sm-6">
-        <div id="bar"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-sm-6">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="app.js"></script>
-  <script src="bonus.js"></script>
+<body>
+    <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+            <h1>Tyler Wiseman</h1>
+            <h3> Visualization Projects</h3>
+        </div>
+    </div>
+    <div class="container card-container">
+        <div class="row card-row">
+            <div class="card col-md-4" id="card-one">
+                <img class="card-img-top" src="../WeatherPy_Project/Visualizations/LatHumidPlot.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">WeatherPy</h5>
+                    <p class="card-text">Matplotlib plots produced in a Jupyter Notebook using Python. Data obtained
+                        from the OpenWeather API. Cities were chosen from randomly generated latitude and longitude
+                        cooordinates using the random library. Data transformed and statistical analysis conducted with
+                        Pandas, NumPy, SciPy.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="../WeatherPy_Project/index.html" class="btn btn-primary">View Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4" id="card-two">
+                <img class="card-img-top" src="assets/images/D3scatter.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">D3 Data Dabbler</h5>
+                    <p class="card-text">Mock news web page featuring a custom scatterplot built with D3.js with interactive axes. Data
+                        obtained
+                        from publicly available CSV from Census Bureau's 2014 American Community Survey.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="../D3_data_journalism/index.html" class="btn btn-primary">View Page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4" id="card-three">
+                <img class="card-img-top" src="assets/images/bacteriaBubble.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bellybutton Biodiversity</h5>
+                    <p class="card-text">Web Visualization Dashboard. Plots produced with Plotly. Data transformed with
+                        JavaScript. Data obtained from publicly available JSON from NC State Labs and consists of test
+                        subject samples of navel bacteria.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="../index.html" class="btn btn-primary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
