@@ -1,56 +1,33 @@
-/* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: black;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-/* The navigation menu links */
-.sidenav a {
+.nav-link {
   padding: 9px;
   text-decoration: none;
   font-size: 18px;
-  color: #818181;
+  color: black;
   display: block;
 }
-.nav-links {
-  padding-top: 15px;
-}
 
-.sidenav a:hover {
+.nav-link:hover {
   color: #f1f1f1;
 }
 
-.image-cropper {
-  width: 120px;
-  height: 120px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 80%;
-  margin-left: 10%;
-  margin-top: 20%;
-}
-
-#profile-pic {
-  height: 100%;
-}
-
 .jumbotron {
-  margin-left: 65px; /*width of navbar*/
   height: 750px;
   width: 100%;
   background-color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#jumbo-header {
+#intro {
+  background-color: #FFF0F5;
+}
+
+#intro #jumbo-header {
   font-size: 80px;
+  text-align: center;
+}
+
+#jumbo-header {
+  font-size: 60px;
   text-align: center;
 }
 
@@ -63,6 +40,7 @@
 }
 
 #summary {
+  height: 500px;
   margin-top: 20px;
   padding-left: 15%;
   padding-right: 15%;
@@ -87,13 +65,13 @@
  margin-top: 5%;
 }
 
-.card-group {
-  padding-left: 9%;
-  padding-right: 9%;
+#resume {
+  height: 500px;
 }
 
 .card-img {
-  opacity: 70%;
+  opacity: 90%;
+  border: 1px solid black;
 }
 .card-img-overlay {
   opacity: 0%;
@@ -109,6 +87,9 @@
 }
 
 .education {
-  padding-left: 9%;
   padding-top: 5%;
+}
+
+#projects {
+  height: 900px;
 }
