@@ -1,24 +1,27 @@
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 200px; /* Set the width of the sidebar */
+    width: 140px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: black;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
   
   /* The navigation menu links */
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 4px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     text-align: center;
+  }
+  .nav-links {
+    padding-top: 40px;
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -27,14 +30,49 @@
   }
 
   .image-cropper {
-    width: 180px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     position: relative;
     overflow: hidden;
     border-radius: 80%;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-top: 20%;
 }
 
 #profile-pic {
   height: 100%;
+}
+
+.jumbotron {
+  margin-left: 140px; /*width of navbar*/
+  height: 750px;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#jumbo-header {
+  font-size: 80px;
+  text-align: center;
+}
+
+#job-title {
+  font-size: 60px;
+  text-align: center;
+}
+.social-icons {
+  text-align: center;
+}
+
+.resume {
+  text-align: center;
+  font-size: 40px;
+}
+
+#resume h1 {
+ margin-top: 10%;
+}
+
+.card-img {
+  opacity: 50%;
 }
