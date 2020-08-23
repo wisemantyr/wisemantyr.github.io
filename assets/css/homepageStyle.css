@@ -93,12 +93,15 @@
 }
 
 .card-img {
-  opacity: 50%;
+  opacity: 70%;
+}
+.card-img-overlay {
+  opacity: 0%;
 }
 
 .card-img-overlay:hover {
   background-color: black;
-  opacity: 50%;
+  opacity: 80%;
 }
 
 #education {
