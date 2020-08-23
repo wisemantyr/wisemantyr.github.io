@@ -87,6 +87,11 @@
  margin-top: 5%;
 }
 
+.card-group {
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
 .card-img {
   opacity: 50%;
 }
@@ -96,3 +101,11 @@
   opacity: 50%;
 }
 
+#education {
+  height: 450px;
+}
+
+.education {
+  padding-left: 9%;
+  padding-top: 5%;
+}
