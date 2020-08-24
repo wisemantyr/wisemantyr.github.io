@@ -86,6 +86,17 @@
   padding-top: 20px;
 }
 
+.education a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.education a:hover {
+  color: darkgrey;
+}
+
+
 #projects {
   height: 100%;
 }
@@ -96,4 +107,24 @@
 
 #experience {
   height: 100%;
+}
+
+.experience a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.experience a:hover {
+  color: darkgrey;
+}
+
+.experience .duties a {
+  color: black;
+  text-decoration: underline;
+}
+
+.experience .duties a:hover {
+  color: darkgrey;
+  text-decoration: none;
 }
