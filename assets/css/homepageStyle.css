@@ -61,12 +61,8 @@
   font-size: 40px;
 }
 
-#resume h1 {
- margin-top: 5%;
-}
-
 #resume {
-  height: 500px;
+  height: 300px;
 }
 
 .card-img {
@@ -91,7 +87,7 @@
 }
 
 #projects {
-  height: 900px;
+  height: 100%;
 }
 
 #skills {
@@ -100,4 +96,8 @@
 
 .skills {
   padding-top: 5%;
+}
+
+#experience {
+  height: 100%;
 }
