@@ -83,13 +83,21 @@
 }
 
 #education {
-  height: 450px;
+  height: 325px;
 }
 
 .education {
-  padding-top: 5%;
+  padding-top: 20px;
 }
 
 #projects {
   height: 900px;
+}
+
+#skills {
+  height: 450px;
+}
+
+.skills {
+  padding-top: 5%;
 }
