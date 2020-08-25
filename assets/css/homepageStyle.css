@@ -56,11 +56,11 @@
 
 .card-text {
   max-height: 200px;
-  position: relative;
 }
 
 .card-img-overlay {
   opacity: 0%;
+  position: absolute;
 }
 
 .card-img-overlay:hover {
