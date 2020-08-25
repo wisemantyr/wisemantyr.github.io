@@ -45,9 +45,18 @@
   color: white;
 }
 
+.card {
+  position: relative;
+}
+
 .card-img {
   opacity: 90%;
   border: 1px solid black;
+}
+
+.card-text {
+  max-height: 200px;
+  position: relative;
 }
 
 .card-img-overlay {
@@ -57,10 +66,6 @@
 .card-img-overlay:hover {
   background-color: black;
   opacity: 80%;
-}
-
-.card {
-  position: relative;
 }
 
 .experience a {
