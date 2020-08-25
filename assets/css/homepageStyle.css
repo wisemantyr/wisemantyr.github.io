@@ -12,13 +12,16 @@
 }
 
 .jumbotron-fluid {
-  height: 750px;
   background-color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-fluid {
+  position: absolute;
 }
 
 #intro {
   background-repeat: no-repeat, repeat;
+  height: 750px;
 }
 
 #intro #jumbo-header {
