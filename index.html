@@ -50,94 +50,103 @@
     </nav>
 
     <!--- INTRO SECTION -->
-    <div class="jumbotron" id="intro" style="background-image: url(assets/images/headshotBWedited.jpg);">
-        <h1 id="jumbo-header">Tyler Wiseman</h1>
-        <h2 id="job-title"> Data Analyst & Public Historian</h2>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/tyler-wiseman/">
-                <img alt="LinkedIn" src="assets/images/LI-In-Bug.png" target="_blank" width="55" height="50">
-            </a>
-            <a href="https://github.com/wisemantyr">
-                <img alt="GitHub" src="assets/images/GitHub-Mark-64px.png" target="_blank" width="55" height="50">
-            </a>
+    <div class="jumbotron-fluid" id="intro" style="background-image: url(assets/images/headshotBWedited.jpg);">
+        <div class="container-fluid">
+            <h1 id="jumbo-header">Tyler Wiseman</h1>
+            <h2 id="job-title"> Data Analyst & Public Historian</h2>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tyler-wiseman/">
+                    <img alt="LinkedIn" src="assets/images/LI-In-Bug.png" target="_blank" width="55" height="50">
+                </a>
+                <a href="https://github.com/wisemantyr">
+                    <img alt="GitHub" src="assets/images/GitHub-Mark-64px.png" target="_blank" width="55" height="50">
+                </a>
+            </div>
         </div>
     </div>
-    <div class="jumbotron" id="summary">
-        <p class="summary">
-            "I'm a Public Historian & Data Analyst with three years of experience in libraries, museums,
-            and higher education.
-            Skilled in Python, SQL/NoSQL databases, and visualization tools including D3.js, Leaflet.js, and
-            Tableau.
-            Passionate about data stewardship, data accessibility, and data’s influence on local public policy.
-            My professional background in libraries and archives has taught me the critical importance of
-            documentation and how to balance attention to detail with the big picture to tell an accurate and
-            compelling story."
-        </p>
-    </div>
+    <div class="jumbotron-fluid" id="summary">
+        <div class="container-fluid">
+            <p class="summary">
+                "I'm a Public Historian & Data Analyst with three years of experience in libraries, museums,
+                and higher education.
+                Skilled in Python, SQL/NoSQL databases, and visualization tools including D3.js, Leaflet.js, and
+                Tableau.
+                Passionate about data stewardship, data accessibility, and data’s influence on local public policy.
+                My professional background in libraries and archives has taught me the critical importance of
+                documentation and how to balance attention to detail with the big picture to tell an accurate and
+                compelling story."
+            </p>
+        </div>
     </div>
     <!--- PROJECTS SECTION -->
-    <div class="jumbotron" id="projects">
-        <h1 id="jumbo-header"> PROJECTS </h1>
-        <div class="card-group">
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="assets/images/knowyourcongress.png" alt="Know Your Congress">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Know Your Congress</h5>
-                    <p class="card-text">
-                        Collaborative Flask web application hosted on Heroku. Explore your Congressional
-                        representation
-                        including
-                        photographs, demographic information, social media links, and voting history.
-                        Includes exploratory graphs and a congressional district map. Using ProPublica Congress API,
-                        Python, Mongo Atlas, D3.js, Tableau.</p>
-                    <p class="card-text"> <a alt="Know Your Congress" target="_blank"
-                            href="http://knowyourcongress.herokuapp.com">View
-                            Project</a></p>
+    <div class="jumbotron-fluid" id="projects">
+        <div class="container-fluid">
+            <h1 id="jumbo-header"> PROJECTS </h1>
+            <div class="card-group">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="assets/images/knowyourcongress.png" alt="Know Your Congress">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Know Your Congress</h5>
+                        <p class="card-text">
+                            Collaborative Flask web application hosted on Heroku. Explore your Congressional
+                            representation
+                            including
+                            photographs, demographic information, social media links, and voting history.
+                            Includes exploratory graphs and a congressional district map. Using ProPublica Congress API,
+                            Python, Mongo Atlas, D3.js, Tableau.</p>
+                        <p class="card-text"> <a alt="Know Your Congress" target="_blank"
+                                href="http://knowyourcongress.herokuapp.com">View
+                                Project</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="assets/images/chart.png" alt="D3 Stacked Diverging">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">D3.js Stacked Diverging Bar Chart</h5>
-                    <p class="card-text">A horizontal stacked diverging bar chart created with d3.js displaying a party
-                        breakdown of the 20 most recent bills voted on by Congress.
-                        This will ultimately be incorporated into the Know Your Congress project.</p>
-                    <p class="card-text"> <a alt="Stacked Diverging Repo" target="_blank"
-                            href="https://github.com/wisemantyr/stacked-diverging-d3">View
-                            Repository</a></p>
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="assets/images/chart.png" alt="D3 Stacked Diverging">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">D3.js Stacked Diverging Bar Chart</h5>
+                        <p class="card-text">A horizontal stacked diverging bar chart created with d3.js displaying a
+                            party
+                            breakdown of the 20 most recent bills voted on by Congress.
+                            This will ultimately be incorporated into the Know Your Congress project.</p>
+                        <p class="card-text"> <a alt="Stacked Diverging Repo" target="_blank"
+                                href="https://github.com/wisemantyr/stacked-diverging-d3">View
+                                Repository</a></p>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-        <div class="card-group">
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="assets/images/machinelearning.png" alt="CHD Prediction">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Predicting Heart Disease</h5>
-                    <p class="card-text">Using SciKit Learn to create Logistic Regression and Random Forest models to
-                        predict 10 year risk of Coronary Heart Disease.
-                        Based on Kaggle data set. Repository contains Jupyter Notebook with models, exploratory graphs,
-                        and final presentation.
-                    </p>
-                    <p class="card-text"> <a alt="CHD Prediction Repo" target="_blank"
-                            href="https://github.com/elisabethvirak/Coronary_Heart_Disease">View
-                            Repository</a></p>
-                </div>
             </div>
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="assets/images/weatherpy.png" alt="Weatherpy">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Statistical Weather Analysis</h5>
-                    <p class="card-text">
-                        Matplotlib plots and statistical analysis on data from OpenWeather API using NumPy, SciPy, and
-                        Pandas.
-                        Data summarized and presented as a website.</p>
-                    <p class="card-text"> <a alt="WeatherPy" target="_blank"
-                            href="https://wisemantyr.github.io/WeatherPy_Project/index.html">View
-                            Website</a></p>
-                    <p class="card-text"> <a alt="WeatherPy" target="_blank"
-                            href="https://github.com/wisemantyr/openweather">View
-                            Repository</a></p>
+            <div class="card-group">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="assets/images/machinelearning.png" alt="CHD Prediction">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Predicting Heart Disease</h5>
+                        <p class="card-text">Using SciKit Learn to create Logistic Regression and Random Forest models
+                            to
+                            predict 10 year risk of Coronary Heart Disease.
+                            Based on Kaggle data set. Repository contains Jupyter Notebook with models, exploratory
+                            graphs,
+                            and final presentation.
+                        </p>
+                        <p class="card-text"> <a alt="CHD Prediction Repo" target="_blank"
+                                href="https://github.com/elisabethvirak/Coronary_Heart_Disease">View
+                                Repository</a></p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="assets/images/weatherpy.png" alt="Weatherpy">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Statistical Weather Analysis</h5>
+                        <p class="card-text">
+                            Matplotlib plots and statistical analysis on data from OpenWeather API using NumPy, SciPy,
+                            and
+                            Pandas.
+                            Data summarized and presented as a website.</p>
+                        <p class="card-text"> <a alt="WeatherPy" target="_blank"
+                                href="https://wisemantyr.github.io/WeatherPy_Project/index.html">View
+                                Website</a></p>
+                        <p class="card-text"> <a alt="WeatherPy" target="_blank"
+                                href="https://github.com/wisemantyr/openweather">View
+                                Repository</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,121 +154,135 @@
 
     </div>
     <!--- SKILLS SECTION -->
-    <div class="jumbotron" id="skills">
-        <h1 id="jumbo-header">SKILLS</h1>
-        <div class=skills>
-            <h3>Languages</h3>
-            <p>SQL, Python (Pandas, NumPy, SciPy, Requests, Flask), JavaScript (D3.js, Leaflet.js), HTML, CSS, R</p>
-            <h3 class>Databases</h3>
-            <p>MongoDB, Mongo Atlas, PostgreSQL, Oracle</p>
-            <h3 class>Environments</h3>
-            <p>Bash, Visual Studio Code, Jupyter Notebooks</p>
-            <h3 class>Project Management</h3>
-            <p>Git, Slack</p>
+    <div class="jumbotron-fluid" id="skills">
+        <div class="container-fluid">
+            <h1 id="jumbo-header">SKILLS</h1>
+            <div class=skills>
+                <h3>Languages</h3>
+                <p>SQL, Python (Pandas, NumPy, SciPy, Requests, Flask), JavaScript (D3.js, Leaflet.js), HTML, CSS, R</p>
+                <h3 class>Databases</h3>
+                <p>MongoDB, Mongo Atlas, PostgreSQL, Oracle</p>
+                <h3 class>Environments</h3>
+                <p>Bash, Visual Studio Code, Jupyter Notebooks</p>
+                <h3 class>Project Management</h3>
+                <p>Git, Slack</p>
+            </div>
         </div>
     </div>
     <!--- EXPERIENCE SECTION -->
-    <div class="jumbotron" id="experience">
-        <h1 id="jumbo-header"> EXPERIENCE </h1>
-        <div class=experience>
-            <h3>User Support Specialist</h3>
-            <h4> <a href="https://library.richmond.edu/" target="_blank" alt="library homepage"> Boatwright Library </a>
-                | University of Richmond | Jul 2019 - Present | Full-Time</h4>
-            <ul class="duties">
-                <li>Investigate lost & missing materials and wrangle related data for cross-departmental use on a
-                    regular
-                    and an ad-hoc basis </li>
-                <li>Compiles monthly reports for fines & fees and lost materials and coordinates student billing for all
-                    University Library service points</li>
-                <li>Maintain inventory spreadsheet of government documents using <a
-                        href="https://www.fdlp.gov/about-fdlp/22-services/929-sudoc-classification-scheme"
-                        target="_blank" alt="SuDoc">SuDoc classification scheme </a> for
-                    appraisal</li>
-                <li>Create and maintain work processes documentation to decrease learning curve of new employees and
-                    tasks</li>
-                <li><a href="https://library.richmond.edu/digital/index.html" target="_blank"
-                        alt="Boatwright Digital Collections">Digitize archival collections</a></li>
-                <li>Coaches and mentors designated student staff through continuous technical training and reinforcement
-                    of library policies and expectations and measures student staff performance</li>
-                <li>Exercises daily and monthly reconciliations of all cash receipts and financial transactions and
-                    complies with University cash handling and financial reporting protocols</li>
-                <li>Delivers clear, timely, and accurate responses to inquiries regarding library operations, programs,
-                    policies, procedures and services</li>
-                <li>Managed and coordinated the transition of media collection to ensure accessibility of materials
-                    during and after renovations</li>
-                <li>Served on a task force to test and customize new library search interface (Primo VE)</li>
-            </ul>
-            <h3 class>Tour Guide</h3>
-            <h4> <a href="https://thevalentine.org/" target="_blank" alt="Valentine homepage">The Valentine </a> |
-                Museum | Aug 2018 - Present | Part Time Seasonal</h4>
-            <ul class="duties">
-                <li>Educate and engage a diverse audience on public walking tours of Downtown Richmond Corridor and
-                    Shockoe Bottom utilizing inclusive language and perspectives </li>
-                <li>First and youngest new hire in over 5 years after earning <a
-                        href="https://www.visitrichmondva.com/partners/events/ambassador-academy/" target="_blank"
-                        alt="Ambassador Academy">Richmond Region Tourism certification</a></li>
-                <li>Redesigned regularly occurring “City Center” tour with new standardized route, content, and name
-                </li>
-                <li>Researched and developed new tour in partnership with Virginia Museum of Fine Arts to complement
-                    Fall 2019 VMFA exhibition</li>
-            </ul>
-            <h3 class>Archives Assistant</h3>
-            <h4> <a href="https://thevalentine.org/" target="_blank" alt="Valentine homepage">The Valentine </a> |
-                Museum | Jun 2017 - Apr 2019 | Volunteer</h4>
-            <ul class="duties">
-                <li>Catalogued a 2,000-file manuscript collection with, creating metadata and finding aids
-                    using <a
-                        href="https://www2.archivists.org/groups/technical-subcommittee-on-describing-archives-a-content-standard-dacs/describing-archives-a-content-standard-dacs-second-"
-                        target="_blank" alt="DACS">Describing Archives, A Content Standard </a>, increasing online
-                    accessibility of 1500+ historic
-                    documents </li>
-                <li>Assessed 100 years of exhibition records to eliminate extraneous information</li>
-                <li>Researched and recorded provenance for books recommended for deaccession</li>
-            </ul>
-            <h3 class>Visitor Experience Associate</h3>
-            <h4> <a href="https://icavcu.org/" alt="ICA homepage" target="_blank">Institute for Contemporary Art </a> |
-                Virginia Commonwealth University | Mar 2018 - Jul 2019 | Part Time
-            </h4>
-            <ul class="duties">
-                <li>Provide excellent customer service as a primary point of contact of the ICA by greeting, orienting,
-                    and assisting visitors, while also providing general security of the art on display and ensuring
-                    guests adhere to ICA Visitor Policies </li>
-                <li>Process Memberships, ticket sales, and visitor feedback via front desk desktops and mobile devices
-                </li>
-                <li>Act as a liaison between front-of-house and ICA staff</li>
-                <li>Maintain knowledge of ICA exhibitions, programs, events, and overall mission</li>
-                <li>Standardized front desk procedures during institution’s first year</li>
-                <li>Collaborated with education department on data collection and drop-in tours</li>
-                <li>Collaborated with full-time staff during institution’s first strategic planning process by providing
-                    feedback and suggestions for the improvement of day to day operations and special events</li>
-            </ul>
+    <div class="jumbotron-fluid" id="experience">
+        <div class="container-fluid">
+            <h1 id="jumbo-header"> EXPERIENCE </h1>
+            <div class=experience>
+                <h3>User Support Specialist</h3>
+                <h4> <a href="https://library.richmond.edu/" target="_blank" alt="library homepage"> Boatwright Library
+                    </a>
+                    | University of Richmond | Jul 2019 - Present | Full-Time</h4>
+                <ul class="duties">
+                    <li>Investigate lost & missing materials and wrangle related data for cross-departmental use on a
+                        regular
+                        and an ad-hoc basis </li>
+                    <li>Compiles monthly reports for fines & fees and lost materials and coordinates student billing for
+                        all
+                        University Library service points</li>
+                    <li>Maintain inventory spreadsheet of government documents using <a
+                            href="https://www.fdlp.gov/about-fdlp/22-services/929-sudoc-classification-scheme"
+                            target="_blank" alt="SuDoc">SuDoc classification scheme </a> for
+                        appraisal</li>
+                    <li>Create and maintain work processes documentation to decrease learning curve of new employees and
+                        tasks</li>
+                    <li><a href="https://library.richmond.edu/digital/index.html" target="_blank"
+                            alt="Boatwright Digital Collections">Digitize archival collections</a></li>
+                    <li>Coaches and mentors designated student staff through continuous technical training and
+                        reinforcement
+                        of library policies and expectations and measures student staff performance</li>
+                    <li>Exercises daily and monthly reconciliations of all cash receipts and financial transactions and
+                        complies with University cash handling and financial reporting protocols</li>
+                    <li>Delivers clear, timely, and accurate responses to inquiries regarding library operations,
+                        programs,
+                        policies, procedures and services</li>
+                    <li>Managed and coordinated the transition of media collection to ensure accessibility of materials
+                        during and after renovations</li>
+                    <li>Served on a task force to test and customize new library search interface (Primo VE)</li>
+                </ul>
+                <h3 class>Tour Guide</h3>
+                <h4> <a href="https://thevalentine.org/" target="_blank" alt="Valentine homepage">The Valentine </a> |
+                    Museum | Aug 2018 - Present | Part Time Seasonal</h4>
+                <ul class="duties">
+                    <li>Educate and engage a diverse audience on public walking tours of Downtown Richmond Corridor and
+                        Shockoe Bottom utilizing inclusive language and perspectives </li>
+                    <li>First and youngest new hire in over 5 years after earning <a
+                            href="https://www.visitrichmondva.com/partners/events/ambassador-academy/" target="_blank"
+                            alt="Ambassador Academy">Richmond Region Tourism certification</a></li>
+                    <li>Redesigned regularly occurring “City Center” tour with new standardized route, content, and name
+                    </li>
+                    <li>Researched and developed new tour in partnership with Virginia Museum of Fine Arts to complement
+                        Fall 2019 VMFA exhibition</li>
+                </ul>
+                <h3 class>Archives Assistant</h3>
+                <h4> <a href="https://thevalentine.org/" target="_blank" alt="Valentine homepage">The Valentine </a> |
+                    Museum | Jun 2017 - Apr 2019 | Volunteer</h4>
+                <ul class="duties">
+                    <li>Catalogued a 2,000-file manuscript collection with, creating metadata and finding aids
+                        using <a
+                            href="https://www2.archivists.org/groups/technical-subcommittee-on-describing-archives-a-content-standard-dacs/describing-archives-a-content-standard-dacs-second-"
+                            target="_blank" alt="DACS">Describing Archives, A Content Standard </a>, increasing online
+                        accessibility of 1500+ historic
+                        documents </li>
+                    <li>Assessed 100 years of exhibition records to eliminate extraneous information</li>
+                    <li>Researched and recorded provenance for books recommended for deaccession</li>
+                </ul>
+                <h3 class>Visitor Experience Associate</h3>
+                <h4> <a href="https://icavcu.org/" alt="ICA homepage" target="_blank">Institute for Contemporary Art
+                    </a> |
+                    Virginia Commonwealth University | Mar 2018 - Jul 2019 | Part Time
+                </h4>
+                <ul class="duties">
+                    <li>Provide excellent customer service as a primary point of contact of the ICA by greeting,
+                        orienting,
+                        and assisting visitors, while also providing general security of the art on display and ensuring
+                        guests adhere to ICA Visitor Policies </li>
+                    <li>Process Memberships, ticket sales, and visitor feedback via front desk desktops and mobile
+                        devices
+                    </li>
+                    <li>Act as a liaison between front-of-house and ICA staff</li>
+                    <li>Maintain knowledge of ICA exhibitions, programs, events, and overall mission</li>
+                    <li>Standardized front desk procedures during institution’s first year</li>
+                    <li>Collaborated with education department on data collection and drop-in tours</li>
+                    <li>Collaborated with full-time staff during institution’s first strategic planning process by
+                        providing
+                        feedback and suggestions for the improvement of day to day operations and special events</li>
+                </ul>
+            </div>
         </div>
     </div>
     <!--- EDUCATION SECTION -->
-    <div class="jumbotron" id="education">
-        <h1 id="jumbo-header"> EDUCATION </h1>
-        <div class=education>
-            <h3> Certificate</h3>
-            <h4>Data Analytics & Visualization | <a href="https://www.richmond.edu/" alt="UR homepage"
-                    target="_blank">University of Richmond</a> | Jul 2020</h4>
-            <p>6-month intensive program focused on gaining technical programming skills averaging 40 hours of work
-                per
-                week.<i> A+ average</i></p>
-            <h3 class> Bachelor of Arts</h3>
-            <h4> International Studies | <a href="https://www.vcu.edu/" alt="VCU homepage" target="_blank">Virginia
-                    Commonwealth University</a> | Dec 2014</h4>
-            <p>Double Major in History with a concentration in Social Justice.<i> magna cum laude</i></p>
+    <div class="jumbotron-fluid" id="education">
+        <div class="container-fluid">
+            <h1 id="jumbo-header"> EDUCATION </h1>
+            <div class=education>
+                <h3> Certificate</h3>
+                <h4>Data Analytics & Visualization | <a href="https://www.richmond.edu/" alt="UR homepage"
+                        target="_blank">University of Richmond</a> | Jul 2020</h4>
+                <p>6-month intensive program focused on gaining technical programming skills averaging 40 hours of work
+                    per
+                    week.<i> A+ average</i></p>
+                <h3 class> Bachelor of Arts</h3>
+                <h4> International Studies | <a href="https://www.vcu.edu/" alt="VCU homepage" target="_blank">Virginia
+                        Commonwealth University</a> | Dec 2014</h4>
+                <p>Double Major in History with a concentration in Social Justice.<i> magna cum laude</i></p>
+            </div>
         </div>
     </div>
     <!--- RESUME SECTION -->
-    <div class="jumbotron" id="resume">
-        <h1 id="jumbo-header"> RESUME </h1>
-        <p class="resume">
-            <a href="assets/resume/TylerWisemanDataAnalystResume.pdf" download alt="resume"> Download Resume</a>
-        </p>
-
+    <div class="jumbotron-fluid" id="resume">
+        <div class="container-fluid">
+            <h1 id="jumbo-header"> RESUME </h1>
+            <p class="resume">
+                <a href="assets/resume/TylerWisemanDataAnalystResume.pdf" download alt="resume"> Download Resume</a>
+            </p>
+        </div>
     </div>
-
 
 </body>
 
