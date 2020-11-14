@@ -71,6 +71,10 @@
   position: absolute;
 }
 
+#skills-header {
+  color:black;
+}
+
 #skills-list {
   padding-left: 15%;
   padding-right: 15%;
