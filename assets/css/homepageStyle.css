@@ -71,10 +71,6 @@
   position: absolute;
 }
 
-#skills {
-  background-color: #708090;
-}
-
 
 #skills-list {
   min-width: 100%;
@@ -82,7 +78,6 @@
   padding-right: 15%;
   padding-top: 10%;
   padding-bottom: 10%;
-  color: white;
   text-align: center;
 }
 
