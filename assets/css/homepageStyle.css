@@ -8,7 +8,7 @@
 
 #intro {
   background-repeat: no-repeat, repeat;
-  height: 735x;
+  height: 735px;
 }
 
 #name {
@@ -35,7 +35,6 @@
   margin-top: 0px;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 8%;
   padding-bottom: 8%;
   font-size: 25px;
   background-color: #708090;
