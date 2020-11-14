@@ -18,8 +18,7 @@
 
 #job-title {
   font-size: 60px;
-  text-align
-  : right;
+  text-align: right;
 }
 
 .jumbo-header {
@@ -73,6 +72,8 @@
 
 .skills {
   padding-top: 40px;
+  background-color: #708090;
+  color: white;
 }
 
 .experience a {
