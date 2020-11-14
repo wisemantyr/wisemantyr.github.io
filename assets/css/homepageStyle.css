@@ -1,6 +1,6 @@
 
 .jumbotron-fluid {
-  margin-top: 30px;
+  margin-top: 40px;
   height: 100%;
   background-color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -11,7 +11,7 @@
   height: 750px;
 }
 
-#intro .jumbo-header {
+.jumbo-header #intro {
   font-size: 80px;
   text-align: right;
 }
