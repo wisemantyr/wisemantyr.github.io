@@ -85,6 +85,10 @@
   color: white;
 }
 
+p #skills-list {
+  text-align: center;
+}
+
 .experience a {
   color: black;
   text-decoration: none;
