@@ -71,6 +71,10 @@
   position: absolute;
 }
 
+#skills {
+  background-color: #708090;
+}
+
 #skills-header {
   color:black;
 }
@@ -81,7 +85,6 @@
   padding-right: 15%;
   padding-top: 4%;
   padding-bottom: 4%;
-  background-color: #708090;
   color: white;
   text-align: center;
 }
