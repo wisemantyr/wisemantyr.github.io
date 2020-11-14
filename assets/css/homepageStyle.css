@@ -11,9 +11,15 @@
   height: 750px;
 }
 
-.jumbo-header #intro {
+#name {
   font-size: 80px;
   text-align: right;
+}
+
+#job-title {
+  font-size: 60px;
+  text-align
+  : right;
 }
 
 .jumbo-header {
