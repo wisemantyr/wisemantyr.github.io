@@ -70,6 +70,10 @@
   position: absolute;
 }
 
+.skills {
+  padding-top: 40px;
+}
+
 .experience a {
   color: black;
   text-decoration: none;
