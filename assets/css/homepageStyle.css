@@ -48,8 +48,8 @@
 }
 
 .summary a {
-  color: whitesmoke;
-  font-weight: bold;
+  color: lightgrey;
+  text-decoration: underline;
 }
 
 
