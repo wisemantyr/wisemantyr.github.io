@@ -47,6 +47,11 @@
   color: white;
 }
 
+.summar a {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
 
 .card {
   position: relative;
@@ -84,8 +89,8 @@
 
 .experience a {
   color: black;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .experience a:hover {
@@ -99,12 +104,11 @@
 
 .experience .duties a:hover {
   color: darkgrey;
-  text-decoration: none;
 }
 
 .education a {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
 }
 
