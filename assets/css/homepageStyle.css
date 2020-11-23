@@ -56,7 +56,7 @@
 }
 
 #summary a {
-  color: black;
+  color:grey;
   font-weight: bold;
 }
 
@@ -136,14 +136,14 @@
   color: white;
 }
 
-#resume a {
+#resume-text a {
   text-align: center;
   font-size: 40px;
-  color: black;
+  color:grey;
   font-weight: bold;
 }
 
-#resume a:hover {
+#resume-text a:hover {
   color: white;
   text-decoration: none;
 }
