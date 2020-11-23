@@ -6,10 +6,15 @@
 }
 
 #intro {
+  background-image: url(assets/images/headshotBWedited.jpg);
   background-repeat: no-repeat, repeat;
   height: 735px;
   margin-bottom: 0px;
   width: 100%;
+}
+
+.container #intro {
+  width:100%;
 }
 
 #name {
