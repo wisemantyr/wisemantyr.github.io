@@ -48,7 +48,7 @@
   background-color: #708090;
 }
 
-.summary {
+.summary-text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   text-align: center;
@@ -56,8 +56,14 @@
 }
 
 .summary a {
-  color: lightgrey;
+  color: darkgrey;
   text-decoration: underline;
+  font-weight: bold;
+}
+
+.resume a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -95,38 +101,33 @@
 }
 
 
-.experience a {
+#experience a {
   color: black;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.experience a:hover {
+#experience a:hover {
   color: darkgrey;
 }
 
-.experience .duties a {
+#experience .duties a {
   color: black;
   text-decoration: underline;
 }
 
-.experience .duties a:hover {
+#experience .duties a:hover {
   color: darkgrey;
 }
 
-.education a {
+#education a {
   color: black;
   text-decoration: underline;
   font-weight: bold;
 }
 
-.education a:hover {
+#education a:hover {
   color: darkgrey;
-}
-
-.resume {
-  text-align: center;
-  font-size: 40px;
 }
 
 #resume {
@@ -136,8 +137,10 @@
   color: white;
 }
 
-#resume a {
-  color: darkgrey;
+#resume-download {
+  text-align: center;
+  font-size: 40px;
+  color: darkgray;
   font-weight: bold;
 }
 
