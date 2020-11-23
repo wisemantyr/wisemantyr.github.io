@@ -74,7 +74,6 @@
 }
 
 .card-img {
-  opacity: 90%;
   border: 1px solid black;
   overflow: hidden;
   object-fit: fill;
