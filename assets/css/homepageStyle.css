@@ -56,7 +56,7 @@
 }
 
 #summary a {
-  color: darkgrey;
+  color: black;
   font-weight: bold;
 }
 
@@ -136,14 +136,14 @@
   color: white;
 }
 
-#resume-download a {
+#resume a {
   text-align: center;
   font-size: 40px;
-  color: darkgray;
+  color: black;
   font-weight: bold;
 }
 
-#resume-download a:hover {
+#resume a:hover {
   color: white;
   text-decoration: none;
 }
