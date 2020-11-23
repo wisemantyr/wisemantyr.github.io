@@ -67,9 +67,9 @@
 
 
 .card {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  margin: 4%;
+  margin: 2%;
 }
 
 .card-img {
