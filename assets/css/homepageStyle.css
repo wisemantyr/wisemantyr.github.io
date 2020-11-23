@@ -5,6 +5,11 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.jumbotron #intro {
+  margin: 0px;
+  padding: 0px;
+}
+
 #intro-image {
   height: 100%;
   margin-bottom: 0px;
