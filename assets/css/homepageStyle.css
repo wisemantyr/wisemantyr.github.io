@@ -5,15 +5,13 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#intro {
-  background-image: url(assets/images/headshotBWedited.jpg);
-  background-repeat: no-repeat, repeat;
+#intro-image {
   height: 735px;
   margin-bottom: 0px;
   width: 100%;
 }
 
-.intro {
+#intro-text {
   margin-right: 0%;
   padding-right: 15px;
 }
