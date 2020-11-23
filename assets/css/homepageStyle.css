@@ -67,15 +67,18 @@
 
 
 .card {
-  position: absolute;
+  position: relavtive;
   overflow: hidden;
   margin: 2%;
+
 }
 
 .card-img {
   opacity: 90%;
   border: 1px solid black;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .card-img-overlay {
