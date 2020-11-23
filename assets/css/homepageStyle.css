@@ -55,13 +55,12 @@
   color: white;
 }
 
-.summary a {
+#summary a {
   color: darkgrey;
-  text-decoration: underline;
   font-weight: bold;
 }
 
-.resume a:hover {
+#summary a:hover {
   color: white;
   text-decoration: none;
 }
@@ -137,14 +136,14 @@
   color: white;
 }
 
-#resume-download {
+#resume-download a {
   text-align: center;
   font-size: 40px;
   color: darkgray;
   font-weight: bold;
 }
 
-#resume a:hover {
+#resume-download a:hover {
   color: white;
   text-decoration: none;
 }
